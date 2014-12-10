@@ -26,4 +26,6 @@
 
 - (NSString *)displayModelName;
 
+- (BOOL)isAniPad;
+
 @end

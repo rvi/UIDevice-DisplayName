@@ -33,6 +33,13 @@
     return [self displayNameShowSubFamily:NO];
 }
 
+- (BOOL)isAniPad
+{
+    NSString *device = [self device];
+    
+    return [device hasPrefix:@"iPad"];
+}
+
 - (NSString *)displayNameShowSubFamily:(BOOL)showSubFamily {
     NSString *device = [self device];
 
